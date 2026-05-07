@@ -59,7 +59,7 @@ OUT:
 Reserve
 
 POST :
-http://localhost:8080/v1/api/flight_reservation/1/reserve
+/v1/api/flight_reservation/1/reserve
 
 Request Payload:
 ```json
