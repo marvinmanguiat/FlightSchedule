@@ -1,56 +1,92 @@
 # FlightSched
 
 GET :
-/v1/api/flight_schedule/search?origin=MANILA&destination=HONGKONG
+/v1/api/flight_schedule/search?origin=MANILA&destination=HONGKONG&page=0&size=10&sort=departureTime,asc
 
 OUT:
 ```json
 [
     {
-        "arrivalTime": "2026-06-01T11:00:00",
-        "departureTime": "2026-06-01T09:00:00",
-        "destination": "HONGKONG",
-        "flightNumber": "PR102",
-        "id": 2,
+        "arrivalTime": "2026-06-01T13:30:00",
+        "departureTime": "2026-06-01T10:00:00",
+        "destination": "THAILAND",
+        "flightNumber": "PR103",
+        "id": 3,
         "origin": "MANILA",
         "seats": [
             {
-                "id": 7,
+                "id": 13,
                 "seatNumber": "1A",
                 "seatType": "BUSINESS",
                 "status": "AVAILABLE"
             },
             {
-                "id": 8,
+                "id": 14,
                 "seatNumber": "1B",
                 "seatType": "BUSINESS",
                 "status": "AVAILABLE"
             },
             {
-                "id": 9,
+                "id": 15,
                 "seatNumber": "2A",
                 "seatType": "ECONOMY",
                 "status": "AVAILABLE"
             },
             {
-                "id": 10,
+                "id": 16,
                 "seatNumber": "2B",
                 "seatType": "ECONOMY",
                 "status": "AVAILABLE"
             },
             {
-                "id": 11,
+                "id": 17,
                 "seatNumber": "2C",
                 "seatType": "ECONOMY",
                 "status": "AVAILABLE"
             },
             {
-                "id": 12,
+                "id": 18,
                 "seatNumber": "2D",
                 "seatType": "ECONOMY",
                 "status": "AVAILABLE"
             }
         ]
+    },
+    {
+        "arrivalTime": "2026-06-01T13:30:00",
+        "departureTime": "2026-06-01T10:00:00",
+        "destination": "THAILAND",
+        "flightNumber": "PR103",
+        "id": 4,
+        "origin": "MANILA",
+        "seats": []
+    },
+    {
+        "arrivalTime": "2026-06-01T13:30:00",
+        "departureTime": "2026-06-01T10:00:00",
+        "destination": "THAILAND",
+        "flightNumber": "PR103",
+        "id": 5,
+        "origin": "MANILA",
+        "seats": []
+    },
+    {
+        "arrivalTime": "2026-06-01T13:30:00",
+        "departureTime": "2026-06-01T10:00:00",
+        "destination": "THAILAND",
+        "flightNumber": "PR103",
+        "id": 6,
+        "origin": "MANILA",
+        "seats": []
+    },
+    {
+        "arrivalTime": "2026-06-01T13:30:00",
+        "departureTime": "2026-06-01T10:00:00",
+        "destination": "THAILAND",
+        "flightNumber": "PR103",
+        "id": 7,
+        "origin": "MANILA",
+        "seats": []
     }
 ]
 ```
