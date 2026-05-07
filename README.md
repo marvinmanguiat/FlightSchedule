@@ -101,7 +101,7 @@ Request Payload:
 ```json
 {
     "passengerId": 3,
-    "seatId": 7
+    "seatId": 14
 }
 ```
 
@@ -110,12 +110,12 @@ Response Payload
 ```json
 {
     "flightSeat": {
-        "id": 7,
-        "seatNumber": "1A",
+        "id": 14,
+        "seatNumber": "1B",
         "seatType": "BUSINESS",
         "status": "RESERVED"
     },
-    "id": 2,
+    "id": 1,
     "passenger": {
         "address": "Batangas Philippines",
         "emailAddress": "pedro@gmail.com",
@@ -124,11 +124,8 @@ Response Payload
         "mobilePhone": "09191234567",
         "passportNumber": null
     },
-    "reservationDate": "2026-05-07T16:31:20.5835629"
+    "reservationDate": "2026-05-07T21:21:25.279412"
 }
-
-
-
 
 SELECT * FROM FLIGHT_SCHEDULE;
 ARRIVAL_TIME  	DEPARTURE_TIME  	ID  	DESTINATION  	FLIGHT_NUMBER  	ORIGIN  
