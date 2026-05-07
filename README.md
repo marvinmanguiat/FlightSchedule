@@ -54,3 +54,40 @@ OUT:
     }
 ]
 ```
+
+
+Reserve
+
+POST :
+http://localhost:8080/v1/api/flight_reservation/1/reserve
+
+Request Payload:
+```json
+{
+    "passengerId": 3,
+    "seatId": 7
+}
+```
+
+
+Response Payload
+```json
+{
+    "flightSeat": {
+        "id": 7,
+        "seatNumber": "1A",
+        "seatType": "BUSINESS",
+        "status": "RESERVED"
+    },
+    "id": 2,
+    "passenger": {
+        "address": "Batangas Philippines",
+        "emailAddress": "pedro@gmail.com",
+        "full_name": "Pedro Reyes",
+        "id": 3,
+        "mobilePhone": "09191234567",
+        "passportNumber": null
+    },
+    "reservationDate": "2026-05-07T16:31:20.5835629"
+}
+```
